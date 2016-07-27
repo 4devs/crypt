@@ -1,0 +1,37 @@
+{
+    "name": "fdevs/crypt",
+    "type": "library",
+    "description": "FDevs Crypt Component",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Samusev",
+            "email": "andrey_simfi@list.ru",
+            "homepage": "http://andrey.4devs.io"
+        },
+        {
+            "name": "4devs Community",
+            "homepage": "https://github.com/4devs/crypt/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9 || ~7.0",
+        "fdevs/padding": "^0.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.1",
+        "ext-mcrypt": "*"
+    },
+    "suggest": {
+        "ext-mcrypt": "use with AES256 Encryptor"
+    },
+    "autoload": {
+        "psr-4": {
+            "FDevs\\Crypt\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
